@@ -15,7 +15,6 @@ public class GenericRollUpSummary {
             Id parId = String.ValueOf(ar.get(ParentId));
             idToResult.put(parId, ar);
         }
-        System.debug('idToResult' + idToResult);
         
         List<SObject> parentObjectList = new List<SObject>();
         String query2 = 'SELECT Id, ' + rollUpFieldName + ' FROM ' + parentObjectName + ' WHERE ID IN: parentIdSet';
