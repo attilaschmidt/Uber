@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Opportunity Rollup 2</label>
+    <protected>false</protected>
+    <values>
+        <field>Filter__c</field>
+        <value xsi:type="xsd:string">StageName = &apos;Closed Won&apos; AND</value>
+    </values>
+    <values>
+        <field>Object__c</field>
+        <value xsi:type="xsd:string">Opportunity</value>
+    </values>
+    <values>
+        <field>Parent_Field__c</field>
+        <value xsi:type="xsd:string">Total_Closed_Deals__c</value>
+    </values>
+    <values>
+        <field>Rollup_Field__c</field>
+        <value xsi:type="xsd:string">Amount</value>
+    </values>
+</CustomMetadata>
